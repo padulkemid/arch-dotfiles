@@ -17,5 +17,13 @@
   "prettier.trailingComma": "es5",
   "prettier.parser": "flow",
   "prettier.proseWrap": "preserve",
-  "prettier.htmlWhitespaceSensitivity": "css"
+  "prettier.htmlWhitespaceSensitivity": "css",
+
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
 }

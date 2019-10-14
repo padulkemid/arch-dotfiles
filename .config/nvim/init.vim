@@ -266,5 +266,8 @@ let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 " Emmet
 let g:user_emmet_leader_key='ee'
 
+" Go
+let g:go_def_mapping_enabled=0
+
 "}}}
 
