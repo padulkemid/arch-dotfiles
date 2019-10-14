@@ -1,0 +1,83 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/padoel/
+	..
+1570927921
+'b
+	/home/padoel/bin/
+	..
+1570927921
+'h
+	/home/padoel/
+	..
+1570927921
+
+# Bookmarks:
+
+# TUI:
+ar
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/padoel
+	..
+0
+d
+
+# Right window history (oldest to newest):
+D/home/padoel
+	..
+0
+D/home
+	..
+0
+D/
+	home
+4
+D/home
+	padoel
+1
+D/home/padoel
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:bd
+:h
+:help
+:edit
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/padoel/.local/share/vifm/Trash/000_ss.png
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/padoel/.local/share/vifm/Trash/000_ss.png
+	/home/padoel/ss.png
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
