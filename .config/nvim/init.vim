@@ -42,9 +42,9 @@ set nowritebackup
 syntax on
 
 "" For theming
-set t_Co=256
-" set background=light
-" colorscheme wal
+" set t_Co=256
+set termguicolors
+colorscheme onehalfdark
 
 nmap <silent> <leader><leader> :noh<CR>
 "}}}
@@ -73,8 +73,8 @@ augroup END
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
-au BufWinLeave *.* mkview
-au BufWinEnter *.* silent loadview
+" au BufWinLeave * mkview
+" au BufWinEnter * silent loadview
 "}}}
 
 " Indentation
@@ -95,6 +95,13 @@ nnoremap <silent> <F9> :%s/\s\+$//e<CR>
 
 nnoremap <silent> j gj
 nnoremap <silent> k gk
+
+"" Go
+au FileType go set noexpandtab
+au FileType go set shiftwidth=4
+au FileType go set softtabstop=4
+au FileType go set tabstop=4
+
 "}}}
 
 " Wildmenu & Clipboard
@@ -106,8 +113,8 @@ set wildignore+=*/vendor/*
 set wildignore+=*/git/*
 set wildmenu
 
-xmap <C-c> "*y
-xmap <C-v> "*p
+xmap <C-c> "+y
+xmap <C-v> "+p
 "}}}
 
 "============================================================
@@ -138,6 +145,7 @@ Plug 'posva/vim-vue'
 Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
 
 " Aesthetics
+Plug 'sonph/onehalf', {'rtp': 'nvim/'}
 Plug 'dylanaraps/wal.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -172,7 +180,7 @@ let g:indentLine_color_gui = '#363949'
 "{{{
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='wal'
+let g:airline_theme='onehalfdark'
 "}}}
 
 " CoC Nvim
@@ -263,11 +271,18 @@ let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 
 "}}}
 
-" Emmet
-let g:user_emmet_leader_key='ee'
-
 " Go
+" {{{
 let g:go_def_mapping_enabled=0
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+" }}}
 
 "}}}
 

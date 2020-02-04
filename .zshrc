@@ -47,6 +47,9 @@ alias i3c="nvim ~/.config/i3/config"
 alias poc="nvim ~/.config/polybar/config"
 alias please="sudo"
 alias dots="git --git-dir=$HOME/.dots/ --work-tree=$HOME"
+alias fcfg="nvim ~/.config/fontconfig/fonts.conf"
+alias rm='echo "Are you sure to permanently delete this? if yes, use the mighty prepend."; false'
+alias sx="startx"
 
 # Application PATHs
 
