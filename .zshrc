@@ -50,11 +50,14 @@ alias dots="git --git-dir=$HOME/.dots/ --work-tree=$HOME"
 alias fcfg="nvim ~/.config/fontconfig/fonts.conf"
 alias rm='echo "Are you sure to permanently delete this? if yes, use the mighty prepend."; false'
 alias sx="startx"
+alias postgrestart="systemctl start postgresql.service"
+alias postgrestop="systemctl stop postgresql.service"
+alias tmux="tmux -f ~/.config/tmux/tmux.conf"
 
 # Application PATHs
 
 # Ruby
-export PATH="$PATH:/home/padoel/.gem/ruby/2.6.0/bin"
+export PATH="$PATH:/home/padoel/.gem/ruby/2.7.0/bin"
 
 # pywal
 ( cat ~/.cache/wal/sequences & )
