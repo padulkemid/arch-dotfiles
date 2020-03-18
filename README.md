@@ -1,6 +1,6 @@
 # gomu gomuuuuuuuuu!!!
 ### Preview :
-![Preview](https://imgur.com/a/DL0kk5Y)
+![Preview](https://i.imgur.com/XT64tM0.jpg)
 
 Redirected from : [**setup**](https://www.reddit.com/r/unixporn/comments/dguw07/i3gaps_my_second_rice_is_now_purpleish/?utm_source=share&utm_medium=web2x) 😇
 _setup on redit is deprecated, but same config just a little bit different color scheme_
