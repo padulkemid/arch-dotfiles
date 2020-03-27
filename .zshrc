@@ -20,6 +20,7 @@ export ZSH="/home/padoel/.config/zsh/"
 ZSH_THEME="spaceship"
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
+
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions )
 
 autoload -U compinit && compinit
@@ -52,7 +53,9 @@ alias rm='echo "Are you sure to permanently delete this? if yes, use the mighty 
 alias sx="startx"
 alias postgrestart="systemctl start postgresql.service"
 alias postgrestop="systemctl stop postgresql.service"
-alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+alias tmux="tmux -f ~/.config/tmux/tmux.conf new -s padoel"
+alias ggh8="cd ~/Gitgud/h8"
+alias starc="nvim ~/.config/starship/starship.toml"
 
 # Application PATHs
 
@@ -60,8 +63,17 @@ alias tmux="tmux -f ~/.config/tmux/tmux.conf"
 export PATH="$PATH:/home/padoel/.gem/ruby/2.7.0/bin"
 
 # pywal
-( cat ~/.cache/wal/sequences & )
+# ( cat ~/.cache/wal/sequences & )
 
 # Go
 export GOPATH="$HOME/Gitgud/Gondar"
+
+# Jump Shell
+eval "$(jump shell)"
+
+# Starship
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+# Jump Shell
 
